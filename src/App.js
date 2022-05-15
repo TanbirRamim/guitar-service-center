@@ -1,8 +1,24 @@
+import Navbar from "./components/Navbar";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Login from "./Pages/Login";
+import Services from "./Pages/Services";
+import { Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div>
-      <h2 className=" text-4xl text-red-700">guitar service</h2>
-      <button className="btn btn-primary">button</button>
+      <Navbar>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+        </Routes>
+      </Navbar>
     </div>
   );
 }

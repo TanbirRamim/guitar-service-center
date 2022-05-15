@@ -3,26 +3,27 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        mytheme: {
-          primary: "#ff0000",
+        light: {
+          primary: "#176F6B",
 
-          secondary: "#F000B8",
+          secondary: "#FFC000",
 
-          accent: "#37CDBE",
+          accent: "#FFEDD5",
 
-          neutral: "#3D4451",
+          neutral: "#F3F4F6",
 
           "base-100": "#FFFFFF",
 
-          info: "#3ABFF8",
+          info: "#98A8DD",
 
-          success: "#36D399",
+          success: "#1BBB70",
 
-          warning: "#FBBD23",
+          warning: "#DF7E07",
 
-          error: "#F87272",
+          error: "#FA5C5C",
         },
       },
+      "dark",
     ],
   },
   plugins: [require("daisyui")],
