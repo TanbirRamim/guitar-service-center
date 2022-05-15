@@ -1,0 +1,13 @@
+:root {
+    --my-color: #fff;
+    /* or any other variables/style */
+  }
+  [data-theme='dark'] {
+    --my-color: #000;
+  }
+  [data-theme='pink'] {
+    --my-color: #fff;
+  }
+  body {
+    background-color: var(--my-color);
+  }

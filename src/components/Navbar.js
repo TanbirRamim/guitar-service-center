@@ -1,7 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
+import "./Navbar.css";
 
 const Navbar = ({ children }) => {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
+
   return (
     <div class="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
